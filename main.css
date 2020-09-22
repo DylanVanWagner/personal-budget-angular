@@ -59,6 +59,11 @@ div.hero h1 {
     margin-bottom: 20px;
 }
 
+div.hero th {
+    font-size: 4.2em;
+    margin-bottom: 20px;
+}
+
 div.hero h2 {
     color: #4d5791;
 }
