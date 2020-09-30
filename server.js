@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use('/', express.static('public'));
 
-const budget = {
+/*  const budget = {
     myBudget: [
     {
         title: 'Eat out',
@@ -19,13 +19,14 @@ const budget = {
         budget: 110
     },
     ]
-};
+}; */
 
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
 app.get('/budget', (req, res) => {
+    var budget = require("./server.json");
     res.json(budget);
 });
 
